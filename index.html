@@ -36,7 +36,7 @@ header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
 const SUPABASE_URL="https://hdgxcdpeelpbjnrtehhv.supabase.co";
-const SUPABASE_PUBLISHABLE_KEY="https://hdgxcdpeelpbjnrtehhv.supabase.co/rest/v1/"; // Never use a secret/service-role key here.
+const SUPABASE_PUBLISHABLE_KEY="sb_publishable_1DF8-U8UGEX5JRjMLnx6lQ_FScwRUt6"; // Never use a secret/service-role key here.
 document.getElementById("year").textContent=new Date().getFullYear();
 const nav=document.getElementById("nav");document.getElementById("menuBtn").onclick=()=>nav.classList.toggle("open");nav.querySelectorAll("a").forEach(a=>a.onclick=()=>nav.classList.remove("open"));
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
