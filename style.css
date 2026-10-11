@@ -1,4 +1,24 @@
+/* AUSSS Navigation Menu */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    padding: 16px;
+    background: #12345a;
+}
 
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background: #245b91;
+}
 :root{--navy:#102b4e;--blue:#1e4777;--gold:#f2bd35;--ink:#1b2a3a;--muted:#627184;--bg:#f3f6fa;--line:#dfe6ef}
 *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}a{color:inherit}.wrap{width:min(1100px,92%);margin:auto}
 .top{background:#091d34;color:#eaf1f8;padding:7px 0;font-size:.85rem}.top .wrap,footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
