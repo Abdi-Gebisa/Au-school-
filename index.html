@@ -1,5 +1,233 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#102b4e"><title>Home | Ambo University Special Secondary School</title><link rel="stylesheet" href="style.css"></head><body><div class="top"><div class="wrap"><span>Ambo, Oromia, Ethiopia</span><span>Official school information</span></div></div>
-<header><div class="wrap head"><a class="brand" href="index.html"><span class="crest">AUSSS</span><span><strong>Ambo University Special<br>Secondary School</strong><small>Learning • Discovery • Service</small></span></a><button class="menu" id="menuBtn" aria-label="Toggle navigation">Menu ☰</button><nav id="nav"><a href="index.html">Home</a><a href="about.html">About the School</a><a href="academics.html">Academics</a><a href="news.html">News & Announcements</a><a href="achievements.html">Achievements</a><a href="downloads.html">Downloads</a><a href="contact.html">Contact</a><a href="admin.html">Administrator Login</nav></div></header><main><section class="hero" id="home"><div class="wrap"><div class="eyebrow">Ambo University Special Secondary School</div><h1>A place to learn, question, and build the future.</h1><p>Welcome to the school's information website. Find announcements, academic information, achievements, and resources in one place.</p><a class="btn" href="news.html">Latest announcements</a> <a class="btn white" href="about.html">About our school</a></div></section><div class="wrap quick"><article><h3>Academic life</h3><p>Information about learning programmes and school activities.</p></article><article><h3>Official announcements</h3><p>Updates approved and published by authorized school administrators.</p></article><article><h3>School community</h3><p>A central source of verified information for students, families, and staff.</p></article></div>
-<section id="graduates" class="graduates-section"><div class="wrap"><div class="section-heading"><div><p class="eyebrow dark">OUR SCHOOL COMMUNITY</p><h2 class="section-title">Grade 12 Graduating Classes</h2><p class="intro">Explore memories of our Grade 12 students and the years they took the national entrance examination.</p></div><div class="slide-controls"><button class="slide-btn" id="prevSlide" aria-label="Previous class">‹</button><button class="slide-btn" id="nextSlide" aria-label="Next class">›</button></div></div><div id="graduateSlides" class="graduate-slides"><div class="gallery-empty">Graduating-class photographs will appear here after the school administrator uploads them.</div></div><div id="galleryDots" class="gallery-dots" aria-label="Choose graduating class"></div><p id="galleryStatus" class="small" aria-live="polite"></p></div></section>
-<section class="latest-section"><div class="wrap"><h2 class="section-title">Latest school announcements</h2><p class="intro">Updates published by authorized school administrators.</p><div id="homeAnnouncements" class="list"><p class="muted">Announcements will appear here when connected to the school database.</p></div><a class="btn" href="news.html">View all announcements</a></div></section>
-</main><footer><div class="wrap"><span>© <span id="year"></span> Ambo University Special Secondary School</span><span>School information should be approved by the administration.</span></div></footer><script src="site.js"></script><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="gallery.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102b4e">
+
+  <title>Home | Ambo University Special Secondary School</title>
+
+  <meta name="description"
+        content="Official information website for Ambo University Special Secondary School in Ambo, Oromia, Ethiopia.">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top">
+    <div class="wrap">
+      <span>Ambo, Oromia, Ethiopia</span>
+      <span>Official school information</span>
+    </div>
+  </div>
+
+  <!-- HEADER AND NAVIGATION -->
+  <header>
+    <div class="wrap head">
+
+      <a class="brand" href="index.html">
+        <span class="crest">AUSSS</span>
+
+        <span>
+          <strong>
+            Ambo University Special<br>
+            Secondary School
+          </strong>
+
+          <small>Learning • Discovery • Service</small>
+        </span>
+      </a>
+
+      <button
+        class="menu"
+        id="menuBtn"
+        type="button"
+        aria-label="Toggle navigation"
+        aria-expanded="false">
+        Menu ☰
+      </button>
+
+      <nav id="nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About the School</a>
+        <a href="academics.html">Academics</a>
+        <a href="news.html">News &amp; Announcements</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="downloads.html">Downloads</a>
+        <a href="contact.html">Contact</a>
+        <a href="admin.html">Administrator Login</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HOMEPAGE HERO -->
+    <section class="hero" id="home">
+      <div class="wrap">
+
+        <div class="eyebrow">
+          Ambo University Special Secondary School
+        </div>
+
+        <h1>A place to learn, question, and build the future.</h1>
+
+        <p>
+          Welcome to the school's information website.
+          Find announcements, academic information, achievements,
+          and resources in one place.
+        </p>
+
+        <a class="btn" href="news.html">
+          Latest announcements
+        </a>
+
+        <a class="btn white" href="about.html">
+          About our school
+        </a>
+
+      </div>
+    </section>
+
+    <!-- QUICK INFORMATION -->
+    <section class="wrap quick" aria-label="School information">
+
+      <article>
+        <h3>Academic life</h3>
+        <p>
+          Information about learning programmes and school activities.
+        </p>
+      </article>
+
+      <article>
+        <h3>Official announcements</h3>
+        <p>
+          Updates approved and published by authorized school administrators.
+        </p>
+      </article>
+
+      <article>
+        <h3>School community</h3>
+        <p>
+          A central source of verified information for students,
+          families, and staff.
+        </p>
+      </article>
+
+    </section>
+
+    <!-- GRADE 12 GRADUATING CLASSES -->
+    <section id="graduates" class="graduates-section">
+      <div class="wrap">
+
+        <div class="section-heading">
+
+          <div>
+            <p class="eyebrow dark">OUR SCHOOL COMMUNITY</p>
+
+            <h2 class="section-title">
+              Grade 12 Graduating Classes
+            </h2>
+
+            <p class="intro">
+              Explore memories of our Grade 12 students and the years
+              they took the national entrance examination.
+            </p>
+          </div>
+
+          <div class="slide-controls">
+            <button
+              class="slide-btn"
+              id="prevSlide"
+              type="button"
+              aria-label="Previous graduating class">
+              ‹
+            </button>
+
+            <button
+              class="slide-btn"
+              id="nextSlide"
+              type="button"
+              aria-label="Next graduating class">
+              ›
+            </button>
+          </div>
+
+        </div>
+
+        <div id="graduateSlides" class="graduate-slides">
+          <div class="gallery-empty">
+            Graduating-class photographs will appear here after
+            the school administrator uploads them.
+          </div>
+        </div>
+
+        <div
+          id="galleryDots"
+          class="gallery-dots"
+          aria-label="Choose graduating class">
+        </div>
+
+        <p
+          id="galleryStatus"
+          class="small"
+          aria-live="polite">
+        </p>
+
+      </div>
+    </section>
+
+    <!-- LATEST ANNOUNCEMENTS -->
+    <section class="latest-section">
+      <div class="wrap">
+
+        <h2 class="section-title">
+          Latest school announcements
+        </h2>
+
+        <p class="intro">
+          Updates published by authorized school administrators.
+        </p>
+
+        <div id="homeAnnouncements" class="list">
+          <p class="muted">
+            Announcements will appear here when the school database
+            is connected and announcements are available.
+          </p>
+        </div>
+
+        <a class="btn" href="news.html">
+          View all announcements
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+
+      <span>
+        © <span id="year"></span>
+        Ambo University Special Secondary School
+      </span>
+
+      <span>
+        School information should be approved by the administration.
+      </span>
+
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="site.js"></script>
+  <script src="gallery.js"></script>
+
+</body>
+  </html>
